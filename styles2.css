@@ -1,0 +1,472 @@
+html {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+/* Main Section */
+.main-container {
+    width: 100%;
+    height: 850px;
+    background-image: url(./resources/crochet-patches.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white
+}
+
+.link {
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+a.link:hover {
+    background-color: lightgray;
+}
+
+.club-container {
+    width: 50%;
+    height: 25%;
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+    background-color: white;
+}
+
+.club-name {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    width: 80%;
+    padding: 30px 10px;
+    border: 6px double black;
+}
+
+
+/* About Container */
+
+.about-quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-image {
+    width: 90%;
+    height: auto;
+}
+
+.about {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.learn,
+.express,
+.make {
+    text-align: center;
+}
+
+.quote-container {
+    background-color: palegoldenrod;
+    height: 300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.quote {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    width: 80%;
+    line-height: 4rem;
+    font-style: italic;
+    margin: 0;
+}
+
+
+.author {
+    margin-right: 10%;
+    align-self: flex-end;
+}
+
+/* Join Section */
+.join-container {
+    height: 500px;
+    background-image: url(./resources/coffee-shop.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-box {
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    padding: 3%;
+}
+
+.join {
+    margin: 0;
+}
+
+.top-border {
+    text-transform: uppercase;
+    border-top: 6px double black;
+    border-right: 6px double black;
+    border-left: 6px double black;
+    padding-bottom: 5%;
+    padding-top: 5%
+}
+
+.bottom-border {
+    border-bottom: 6px double black;
+    border-left: 6px double black;
+    border-right: 6px double black;
+    padding-bottom: 5%;
+}
+
+/* Events Section */
+
+.upcoming-events {
+    text-align: center;
+    background-color: lightblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.events-container {
+    margin-top: 0;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.event-box {
+    border: 1px solid black;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-name {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+
+.event-image {
+    width: 80%;
+    height: auto;
+    margin-top: 0;
+}
+
+.description {
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.meeting {
+    margin-top: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.learn-more {
+    padding: 10px;
+    color: black;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+a.learn-more:hover {
+    background-color: lightgray;
+}
+
+/* Contact / Footer Section */
+
+.contact-us {
+    text-align: center;
+    background-color: rgb(96, 189, 138);
+    margin: 0;
+    padding: 15px 0;
+}
+
+.contact-info {
+    background-color: white;
+    text-align: center;
+}
+
+
+/* Media Queries - Devices smaller than 480px (Mobile) */
+
+@media only screen and (max-width: 480px) {
+    html {
+        width: 100%;
+    }
+
+    .link {
+        font-size: 1rem;
+    }
+
+    .main-container {
+        height: 500px;
+    }
+
+    .club-container {
+        padding: 3%;
+    }
+
+   .club-name {
+        font-size: 1rem;
+   }
+
+   .learn,
+   .make,
+   .express {
+        text-align: center;
+        width: 90%;
+   }
+
+   .about {
+        font-size: 0.5rem;
+   }
+
+   .quote-container {
+        height: 14%;
+   }
+
+   .quote {
+        font-size: 19px;
+        line-height: normal;
+        padding-top: 10%;
+   }
+
+   .author {
+        font-size: 12px;
+        padding-bottom: 5%
+   }
+
+   .join-container {
+        height: 500px;
+   }
+
+   .white-box {
+        width: 80%;
+   }
+
+   .top-border {
+        font-size: 1rem;
+   }
+
+   .bottom-border {
+        font-size: 0.8rem;
+   }
+
+   .upcoming-events,
+   .contact-us {
+        font-size: 0.8rem;
+   }
+
+   .contact-info {
+        font-size: 0.7rem;
+   }
+
+   .events-container {
+        display: flex;
+        flex-direction: column;
+   }
+
+   .event-box {
+        width: 90%;
+        border: none;
+   }
+
+   .event-name {
+        padding: 10px;
+   }
+
+   .event-name,
+   .description {
+        font-size: 0.8rem;
+   }
+
+   .event-image {
+        width: 30%;
+   }
+
+    .meeting {
+        font-size: 0.8rem;
+    }
+
+    .learn-more {
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+}
+
+
+/* Media Query - Device smaller than 768 px (Tablet) */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .main-container {
+        height: 750px;
+    }
+    
+    .club-name {
+        font-size: 1.5rem;
+    }
+
+    .club-container {
+        height: 23%;
+    }
+
+    .about {
+        font-size: 0.7rem;
+    }
+
+    .learn {
+        width: 85%;
+    }
+
+    .make,
+    .express {
+        width: 80%;
+    }
+
+    .quote {
+        font-size: 1.2rem;
+    }
+
+    .white-box {
+        width: 60%;
+    }
+
+    .border-bottom {
+        padding: 14px;
+    }
+
+    .event-box {
+        width: 40%;
+    }
+
+    .fall {
+        width: 80%;
+    }
+
+    .allday {
+        width: 84%;
+    }
+
+    .left {
+        width: 75%;
+    }
+
+    .right {
+        width: 80%;
+    }
+}
+
+
+/* Media Query - Device smaller than 1024px (Tablet Landscape) */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .learn,
+    .express,
+    .make {
+        width: 60%;
+    }
+
+    .event-box {
+        width: 40%;
+    }
+
+    .learn-more {
+        margin-top: 20px;
+    }
+}
+
+/* Media Query - Device smaller that 1600px (Laptop) */
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+    .event-box {
+        width: 40%;
+    }
+
+    .learn-more {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 1110px) {
+    .events-container {
+        height: 650px;
+    }
+}
+
+@media only screen and (min-width: 1110px) and (max-width: 1400px) {
+    .learn-more {
+        margin-top: 30px;
+    }
+}
+
+/* Devices larger than 1600px (desktops) */
+
+@media only screen and (min-width: 2000px) {
+    .event-image {
+        width: 70%;
+    }
+
+    .learn-more {
+        margin: 0;
+    }
+}
